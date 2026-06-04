@@ -3,6 +3,8 @@ import faiss
 import numpy as np
 from sentence_transformers import SentenceTransformer
 from groq import Groq
+from dotenv import load_dotenv
+load_dotenv()
 
 # ── CONFIG ──────────────────────────────────────────────
 GROQ_API_KEY = os.environ.get("GEMINI_API_KEY")   # from console.groq.com
